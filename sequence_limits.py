@@ -51,10 +51,16 @@ def main():
     dn = sequence_D(1000) #sequence defined by sin(2^-n)/2^-n
     e = E(lambda x: np.sin(x), 0,80)
     ePi = E(lambda x: np.sin(x),np.pi,80)
-    print limit(an)
-    print limit(dn)
-    print limit(e)
-    print limit(ePi)
+    
+    print 'D_n: ', dn
+    print 'a_n: ', an
+    print 'E: ', e
+    print 'E @ x=pi: ', ePi
+    print 'Test limit: ', test_limit()
+    print 'Limit of a_n: ', limit(an)
+    print 'Limit of D_n when n = 1000: ', limit(dn)
+    print 'Limit of E at x=0: ', limit(e)
+    print 'Limit of E at x = pi: ', limit(ePi)
    
 
 
