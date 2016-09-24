@@ -2,7 +2,7 @@
 
 **Author(s):** _\<your name(s)\>_
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2016f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2016f/cw-04-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys220-2016f/cw-04-saktill.svg?branch=master)](https://travis-ci.org/chapman-phys220-2016f/cw-04-saktill)
 
 **Due date:** 2016/09/27
 
