@@ -21,7 +21,7 @@ def limit(seq):
     given sequence if it passes a convergence test. """
     #limitTest1 = abs(seq[n]) - abs(seq[n+1])
     #limitTest2 = abs(seq[n-1]) - abs(seq[n])
-    for n in seq:
+    for n in range(len(seq)+1):
         if(abs(seq[n]) - abs(seq[n+1]) < abs(seq[n-1]) - abs(seq[n])):
            return seq[len(seq)-1]
         else:
@@ -30,8 +30,13 @@ def limit(seq):
 def test_limit():
     """We will test the limit function with the sequence b_n = n for n in the interval[0,500]"""
     bn = np.linspace(0,500,501) 
-    limit(bn)
+    test =  limit(bn)
+    if test == None:
+        return False
+    else:
+        return bn[len(bn)-1]
 
+ 
 def sequence_D(N):
     """Creates a specified sequence for evaluation. sin(2^(-n))/2^(-n)"""
     n = np.linspace(0,N,N+1)
@@ -39,7 +44,7 @@ def sequence_D(N):
     return Dn
 
 def E(f,x,N):
-    """ """
+    """This is the second D_n sequence that is defined in the problem that I decided to rename to E """
     n = np.linspace(0,N,N+1)
     h = 2**(-n)
     approx =(f(x+h) - f(x))/h
@@ -47,7 +52,7 @@ def E(f,x,N):
 
 def main():
     """The main function is being used to call the functions defined above and to test their limits."""
-    an = sequence_a_n(100)
+    """ an = sequence_a_n(100)
     dn = sequence_D(1000) #sequence defined by sin(2^-n)/2^-n
     e = E(lambda x: np.sin(x), 0,80)
     ePi = E(lambda x: np.sin(x),np.pi,80)
@@ -62,7 +67,8 @@ def main():
     print 'Limit of E at x=0: ', limit(e)
     print 'Limit of E at x = pi: ', limit(ePi)
    
-
+    """
+    limit(sequence_a_n(100))
 
 if __name__ == "__main__":
     main()
