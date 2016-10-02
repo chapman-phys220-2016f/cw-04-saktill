@@ -27,7 +27,7 @@ def test_diffMidptInt():
     """Testing our recursive formula with the non-recursive formula for midpoint integration."""
     diffMidptInt(lambda x: x**2,0,4,10)
     midpointint(lambda x: x**2,0,4,10)
-    if diffMidptInt == midpointint:
+    if (abs(diffMidptInt - midpointint) <= 1E-4):
         return True
     else:
         return False
