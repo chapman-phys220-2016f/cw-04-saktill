@@ -1,8 +1,8 @@
 # PHYS220 CW 4
 
-**Author(s):** _\<your name(s)\>_
+**Author(s):** Saktill  _
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2016f/cw-04-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2016f/cw-04-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys220-2016f/cw-04-saktill.svg?branch=master)](https://travis-ci.org/chapman-phys220-2016f/cw-04-saktill)
 
 **Due date:** 2016/09/27
 
@@ -24,7 +24,8 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+Sakthi: I found this assignment useful because it really got me up to speed about thinking about things recursively when I had such a minimal exposure to the topic
+which I found very cool.
 
 ## Honor Pledge
 
@@ -35,4 +36,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+Saktill
