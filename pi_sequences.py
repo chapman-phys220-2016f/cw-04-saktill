@@ -90,11 +90,8 @@ def plotSeq(n,f):
 def plotAll(n):
 	"""Plots all the sequences, to show how quickly they converge to pi."""
 	plt.hold('on')
-	plt.plot(getN(n),seq1(n,f1))
-	plt.plot(getN(n),seq1(n,f2))
-	plt.plot(getN(n),seq1(n,f3))
-	plt.plot(getN(n),seq1(n,f4))
-	plt.plot(getN(n),seq1(n,f5))
+	plt.plot(getN(n),seq1(n,f1),getN(n),seq1(n,f2),getN(n),seq1(n,f3),getN(n),seq1(n,f4),getN(n),seq1(n,f5),)
+	plt.legend(['Seq1','Seq2','Seq3','Seq4','Seq5'])
 	plt.show()
 
 
