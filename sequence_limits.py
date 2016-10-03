@@ -1,5 +1,6 @@
 #!/bin/bash/env python
 import numpy as np
+import matplotlib.pyplot as plt
 
 def sequence_a_n(N):
     """This function takes in a finite limit for this sequence and then outputs an array which represents that 
@@ -52,23 +53,16 @@ def E(f,x,N):
 
 def main():
     """The main function is being used to call the functions defined above and to test their limits."""
-    """ an = sequence_a_n(100)
-    dn = sequence_D(1000) #sequence defined by sin(2^-n)/2^-n
-    e = E(lambda x: np.sin(x), 0,80)
-    ePi = E(lambda x: np.sin(x),np.pi,80)
-    
-    print 'D_n: ', dn
-    print 'a_n: ', an
-    print 'E: ', e
-    print 'E @ x=pi: ', ePi
-    print 'Test limit: ', test_limit()
-    print 'Limit of a_n: ', limit(an)
-    print 'Limit of D_n when n = 1000: ', limit(dn)
-    print 'Limit of E at x=0: ', limit(e)
-    print 'Limit of E at x = pi: ', limit(ePi)
-   
-    """
-    limit(sequence_a_n(100))
+    sinZero = E(lambda x: np.sin(x), 0,80)
+    sinPi = E(lambda x: np.sin(x), np.pi,80)
+    print sinZero
+    print sinPi
+    plt.plot(sinZero, 'bo')
+    plt.plot(sinPi, 'ro')
+    plt.axis([0,100,-2,2])
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.show()
 
 if __name__ == "__main__":
     main()
